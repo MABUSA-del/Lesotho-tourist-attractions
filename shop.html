@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shop | Lesotho Unframed</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center me-3"
+                href="index.html">
+
+                <span class="brand-mark">山</span>
+
+                <span>
+                    <span class="brand-title d-block">
+                        Lesotho Unframed
+                    </span>
+
+                    <span class="brand-sub d-block">
+                        Culture. Landscapes. Stories.
+                    </span>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="heritage.html">
+                            Our Heritage
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shop.html"
+                            aria-current="page">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="visit.html">
+                            Visit Information
+                        </a>
+                    </li>
+
+                </ul>
+
+                
+
+                <button type="button" class="theme-toggle ms-lg-2"
+                    id="themeToggle">
+                    <i class="bi bi-moon-stars-fill"></i>
+                    Dark Mode
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <header class="shop-intro">
+        <div class="container">
+            <div class="intro-content">
+
+                <h1>Shop</h1>
+
+                <p>
+                    Support local. Take home a piece of Lesotho.
+                </p>
+
+            </div>
+        </div>
+    </header>
+
+    
+
+    <main>
+        <section class="section-pad">
+            <div class="container">
+
+                <div class="row g-3">
+
+                    
+
+                    <div class="col-lg-9">
+
+                        <div class="row g-2 mb-3">
+
+                            <div class="col-md-5">
+                                <input class="search-box"
+                                    id="productSearch"
+                                    type="search"
+                                    placeholder="Search products..."
+                                    aria-label="Search products">
+                            </div>
+
+                            <div class="col-md-7">
+
+                                <div class="filter-row" id="productFilters">
+
+                                    <button class="filter-btn active"
+                                        type="button" data-filter="All"
+                                        aria-pressed="true">
+                                        All
+                                    </button>
+
+                                    <button class="filter-btn"
+                                        type="button" data-filter="Crafts"
+                                        aria-pressed="false">
+                                        Crafts
+                                    </button>
+
+                                    <button class="filter-btn"
+                                        type="button" data-filter="Textiles"
+                                        aria-pressed="false">
+                                        Textiles
+                                    </button>
+
+                                    <button class="filter-btn"
+                                        type="button" data-filter="Home Decor"
+                                        aria-pressed="false">
+                                        Home Decor
+                                    </button>
+
+                                    <button class="filter-btn"
+                                        type="button"
+                                        data-filter="Food & Beverages"
+                                        aria-pressed="false">
+                                        Food &amp; Beverages
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="row g-2" id="productsGrid">
+
+                            <div class="col-6 col-md-4 col-xl-3 product-item"
+                                data-category="Crafts"
+                                data-name="mokorotlo hat">
+
+                                <div class="product-card">
+
+                                    <img class="product-img"
+                                        src="hat.jpg"
+                                        alt="Traditional woven Basotho mokorotlo hat"
+                                        loading="lazy">
+
+                                    <div class="card-body">
+                                        <h3>basotho Hats</h3>
+                                        <p>Traditional Handwoven Hat</p>
+                                        <div class="price mb-2">M250</div>
+
+                                        <button class="btn btn-earth w-100 add-cart"
+                                            type="button"
+                                            data-name="Mokorotlo Hat"
+                                            data-price="250">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 product-item"
+                                data-category="Textiles"
+                                data-name="basotho blanket">
+
+                                <div class="product-card">
+
+                                    <img class="product-img"
+                                        src="blankets.jpg"
+                                        alt="Basotho blankets with traditional designs"
+                                        loading="lazy">
+
+                                    <div class="card-body">
+                                        <h3>Basotho Blanket</h3>
+                                        <p>Traditional Patterned Blanket</p>
+                                        <div class="price mb-2">M180</div>
+
+                                        <button class="btn btn-earth w-100 add-cart"
+                                            type="button"
+                                            data-name="Basotho Blanket"
+                                            data-price="180">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 product-item"
+                                data-category="Crafts"
+                                data-name="woven basket">
+
+                                <div class="product-card">
+
+                                    <img class="product-img"
+                                        src="woven.jpg"
+                                        alt="Traditional woven craft item"
+                                        loading="lazy">
+
+                                    <div class="card-body">
+                                        <h3>Woven Basket</h3>
+                                        <p>Handwoven Traditional Craft</p>
+                                        <div class="price mb-2">M450</div>
+
+                                        <button class="btn btn-earth w-100 add-cart"
+                                            type="button"
+                                            data-name="Woven Basket"
+                                            data-price="450">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 product-item"
+                                data-category="Crafts"
+                                data-name="basotho beads">
+
+                                <div class="product-card">
+
+                                    <img class="product-img"
+                                        src="beads.jpg"
+                                        alt="Beaded bracelet and cultural accessories"
+                                        loading="lazy">
+
+                                    <div class="card-body">
+                                        <h3>Basotho Beads</h3>
+                                        <p>Beaded Cultural Accessory</p>
+                                        <div class="price mb-2">M100</div>
+
+                                        <button class="btn btn-earth w-100 add-cart"
+                                            type="button"
+                                            data-name="Basotho Beads"
+                                            data-price="100">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 product-item"
+                                data-category="Crafts"
+                                data-name="leather sandals">
+
+                                <div class="product-card">
+
+                                    <img class="product-img"
+                                        src="shoes.png"
+                                        alt="Handmade leather sandals"
+                                        loading="lazy">
+
+                                    <div class="card-body">
+                                        <h3>Leather Sandals</h3>
+                                        <p>Handcrafted Leather Footwear</p>
+                                        <div class="price mb-2">M120</div>
+
+                                        <button class="btn btn-earth w-100 add-cart"
+                                            type="button"
+                                            data-name="Leather Sandals"
+                                            data-price="120">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 product-item"
+                                data-category="Textiles"
+                                data-name="mohair scarf">
+
+                                <div class="product-card">
+
+                                    <img class="product-img"
+                                        src="scaf.jpg"
+                                        alt="Woven textile accessory"
+                                        loading="lazy">
+
+                                    <div class="card-body">
+                                        <h3>Mohair Scarf</h3>
+                                        <p>Soft Woven Textile Accessory</p>
+                                        <div class="price mb-2">M150</div>
+
+                                        <button class="btn btn-earth w-100 add-cart"
+                                            type="button"
+                                            data-name="Mohair Scarf"
+                                            data-price="150">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-xl-3 product-item"
+                                data-category="Home Decor"
+                                data-name="handmade pottery">
+
+                                <div class="product-card">
+
+                                    <img class="product-img"
+                                        src="clay.jpg"
+                                        alt="Handmade pottery and decor"
+                                        loading="lazy">
+
+                                    <div class="card-body">
+                                        <h3>Handmade Pottery</h3>
+                                        <p>Traditional Handmade Decor</p>
+                                        <div class="price mb-2">M90</div>
+
+                                        <button class="btn btn-earth w-100 add-cart"
+                                            type="button"
+                                            data-name="Handmade Pottery"
+                                            data-price="90">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="shopNoResults"
+                            class="empty-note d-none" role="status">
+                            No products match your search.
+                        </div>
+
+                    </div>
+
+                    
+
+                    <aside class="col-lg-3">
+
+                        <div class="cart-box">
+
+                            <h3>
+                                Cart
+                                <span class="badge text-bg-secondary"
+                                    id="cartCount">0</span>
+                            </h3>
+
+                            <div id="cartItems">
+                                <p>Your cart is empty.</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between">
+                                <strong>Total</strong>
+                                <strong id="cartTotal">M0</strong>
+                            </div>
+
+                            <button class="btn btn-earth w-100 mt-2"
+                                id="viewCart" type="button">
+                                View Cart →
+                            </button>
+
+                        </div>
+
+                        <div class="cart-box mt-3 text-center">
+                            <div class="cart-symbol">♧</div>
+
+                            <h3>
+                                Local Crafts<br>
+                                Real Stories
+                            </h3>
+
+                            <p>Support Basotho communities.</p>
+                        </div>
+
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center">
+
+                        <span class="brand-mark">山</span>
+
+                        <div>
+                            <div class="footer-brand">
+                                Lesotho Unframed
+                            </div>
+
+                            <small>
+                                Culture. Landscapes. Stories.
+                            </small>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-5 footer-nav d-flex flex-wrap gap-3">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="heritage.html">Our Heritage</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="visit.html">Visit Information</a>
+                </div>
+
+               
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="text-center">
+                <small>
+                    © 2026 Lesotho Unframed. All rights reserved.
+                </small>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="shop.js"></script>
+
+</body>
+</html>

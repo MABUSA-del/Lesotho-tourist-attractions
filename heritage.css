@@ -1,0 +1,339 @@
+
+/* General styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5eee2;
+    color: #30251e;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: #442719;
+    padding: 10px 0;
+    border-bottom: 1px solid #8c6a51;
+}
+
+.brand-symbol {
+    font-size: 22px;
+    color: #f6e9d7;
+    margin-right: 8px;
+}
+
+.brand-name {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.brand-tagline {
+    font-size: 9px;
+    opacity: 0.8;
+}
+
+.nav-link {
+    color: #f8efe3 !important;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e7b58e !important;
+}
+
+.navbar-toggler {
+    border-color: #a78a73;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.theme-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #b69a83;
+    border-radius: 3px;
+    padding: 7px 10px;
+    font-size: 10px;
+}
+
+.theme-button:hover {
+    background-color: #6b3f2a;
+}
+
+/* Hero section */
+
+.heritage-hero {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(
+        90deg,
+        rgba(31, 22, 15, 0.78),
+        rgba(31, 22, 15, 0.25),
+        rgba(31, 22, 15, 0.08)
+    ), url("Basotho.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.heritage-intro {
+    max-width: 570px;
+    padding: 35px 0;
+}
+
+.heritage-hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.heritage-hero p {
+    max-width: 410px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Main content */
+
+.section-spacing {
+    padding: 27px 0;
+}
+
+.heritage-panel {
+    background-color: #fffaf1;
+    border: 1px solid #e2d4c2;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.heritage-panel h2 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.heritage-panel p {
+    color: #62564c;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.heritage-image {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* Accordion */
+
+.accordion-button {
+    background-color: #f8f1e7 !important;
+    font-size: 12px;
+    padding: 12px;
+}
+
+.accordion-body {
+    background-color: #fffaf1;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Quote */
+
+.heritage-quote {
+    background-color: #7a4b32;
+    color: white;
+    font-style: italic;
+    font-size: 13px;
+    padding: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #442719;
+    color: #f8efe3;
+    padding: 18px 0;
+    margin-top: 22px;
+}
+
+.footer-name {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.site-footer small {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    opacity: 0.75;
+}
+
+.footer-links {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+/* Dark mode */
+
+body.dark-mode {
+    background-color: #201a16;
+    color: #f3e8dc;
+}
+
+body.dark-mode .heritage-panel {
+    background-color: #302720;
+    border-color: #554438;
+}
+
+body.dark-mode .heritage-panel p {
+    color: #c2b1a0;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #302720 !important;
+    color: #f3e8dc;
+}
+
+body.dark-mode .accordion-button::after {
+    filter: invert(1);
+}
+
+body.dark-mode .accordion-body {
+    background-color: #28211c;
+    color: #f3e8dc;
+}
+
+/* Tablets and small laptops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .heritage-hero {
+        min-height: 250px;
+    }
+
+    .section-spacing {
+        padding: 24px 0;
+    }
+}
+
+/* Phones */
+
+@media (max-width: 767px) {
+    .heritage-hero {
+        min-height: 240px;
+    }
+
+    .heritage-hero h1 {
+        font-size: 35px;
+    }
+
+    .section-spacing {
+        padding: 20px 0;
+    }
+
+    .navbar-collapse {
+        padding-top: 10px;
+    }
+
+    .navbar-nav {
+        align-items: stretch !important;
+    }
+
+    .navbar .nav-link {
+        padding: 9px 5px !important;
+    }
+
+    .theme-button {
+        margin-top: 7px;
+    }
+
+    .site-footer .row {
+        gap: 12px;
+    }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+    .heritage-hero {
+        min-height: 220px;
+    }
+
+    .heritage-intro {
+        padding: 25px 0;
+    }
+
+    .heritage-hero h1 {
+        font-size: 30px;
+    }
+
+    .heritage-hero p {
+        font-size: 12px;
+    }
+
+    .heritage-panel {
+        padding: 12px;
+    }
+}
+
+/* Large screens and TVs */
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .heritage-hero {
+        min-height: 340px;
+    }
+
+    .heritage-hero h1 {
+        font-size: 56px;
+    }
+
+    .heritage-hero p {
+        font-size: 16px;
+    }
+
+    .section-spacing {
+        padding: 35px 0;
+    }
+}
+
+@media (min-width: 2200px) {
+    .container {
+        max-width: 1800px;
+    }
+
+    .heritage-hero {
+        min-height: 420px;
+    }
+
+    .heritage-hero h1 {
+        font-size: 64px;
+    }
+
+    .heritage-hero p {
+        font-size: 18px;
+    }
+}

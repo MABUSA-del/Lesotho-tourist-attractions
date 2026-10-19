@@ -1,0 +1,561 @@
+* {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f5eee2;
+            color: #30251e;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        image {
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        
+        .navbar {
+            background-color: #442719;
+            padding: 10px 0;
+            border-bottom: 1px solid #8c6a51;
+        }
+
+        .brand-symbol {
+            font-size: 22px;
+            color: #f6e9d7;
+            margin-right: 8px;
+        }
+
+        .brand-name {
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .brand-tagline {
+            font-size: 10px;
+            color: #e5d3c0;
+        }
+
+        .nav-link {
+            color: #f8efe3 !important;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #e7b58e !important;
+        }
+
+        .navbar-menu {
+            border-color: #a78a73;
+        }
+
+        .navbar-menu-icon {
+            filter: invert(1);
+        }
+
+        .theme-button {
+            color: white;
+            border: 1px solid #b69a83;
+            background: transparent;
+            border-radius: 3px;
+            padding: 7px 10px;
+            font-size: 12px;
+        }
+
+        .theme-button:hover {
+            background-color: #6b3f2a;
+        }
+
+        
+        .hero {
+            min-height: 260px;
+            display: flex;
+            align-items: center;
+            background-image: url('maluti.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,rgba(31, 22, 15, 0.78),rgba(31, 22, 15, 0.25),rgba(31, 22, 15, 0.08) );
+        }
+
+        .introduction {
+            position: relative;
+            padding: 40px 0;
+            max-width: 570px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 410px;
+        }
+
+        
+        .section-spacing {
+            padding: 30px 0;
+        }
+
+        .information {
+            background-color: #fffaf1;
+            border: 1px solid #e2d4c2;
+            border-radius: 4px;
+            padding: 18px;
+        }
+
+        .information  h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .information h3 {
+            font-size: 17px;
+        }
+
+        .information p,
+        .information li {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #62564c;
+        }
+
+        
+        .visitor-detail {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .visitor-symbol {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #ead9c7;
+            color: #442719;
+            font-size: 15px;
+        }
+
+        .visitor-detail h3 {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .visitor-detail p {
+            margin-bottom: 0;
+            color: #77695d;
+        }
+
+        
+        .earth-button {
+            background-color: #8b5539;
+            color: white;
+            border: 1px solid #9b6b50;
+            border-radius: 3px;
+            padding: 9px 16px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .earth-button:hover {
+            background-color: #442719;
+            color: white;
+        }
+
+        /* Form fields */
+        .form-label {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .form-control,
+        .form-select {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            border-color: #e2d4c2;
+            border-radius: 3px;
+        }
+
+        /* Estimated cost */
+        .estimate-panel {
+            background-color: #efe1cf;
+            border-radius: 4px;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .estimate-panel strong {
+            font-size: 25px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #442719;
+            color: #f8efe3;
+            padding: 25px 0;
+            margin-top: 20px;
+        }
+
+        .footer-name {
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .site-footer small {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            color: #e5d3c0;
+        }
+
+        .footer-links {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+        }
+
+        .footer-links a {
+            color: #f8efe3;
+        }
+
+        .footer-links a:hover {
+            color: #e7b58e;
+        }
+
+        /* Dark mode */
+        .dark-mode {
+            background-color: #201a16;
+            color: #f3e8dc;
+        }
+
+        .dark-mode .information {
+            background-color: #302720;
+            border-color: #554438;
+        }
+
+        .dark-mode .information p,
+        .dark-mode .visitor-detail p {
+            color: #c2b1a0;
+        }
+
+        .dark-mode .form-control,
+        .dark-mode .form-select {
+            background-color: #29221d;
+            color: #f3e8dc;
+            border-color: #554438;
+        }
+
+        .dark-mode .form-control::placeholder {
+            color: #b7a595;
+        }
+
+        .dark-mode .form-select option {
+            background-color: #29221d;
+            color: #f3e8dc;
+        }
+
+        .dark-mode .estimate-panel {
+            background-color: #3b2c21;
+            color: #f3e8dc;
+        }
+
+        .dark-mode .visitor-symbol {
+            background-color: #4b382b;
+            color: #f3e8dc;
+        }
+
+        .dark-mode hr {
+            border-color: #554438;
+        }
+
+        /* Tablets and small laptops */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .container {
+                max-width: 95%;
+            }
+
+            .hero {
+                min-height: 250px;
+            }
+
+            .information {
+                padding: 14px;
+            }
+        }
+
+        /* Phones */
+        @media (max-width: 767px) {
+            .hero {
+                min-height: 240px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 13px;
+            }
+
+            .introduction {
+                padding: 25px 0;
+            }
+
+            .section-spacing {
+                padding: 22px 0;
+            }
+
+            .information {
+                padding: 14px;
+            }
+
+            .estimate-panel {
+                padding: 14px;
+            }
+
+            .navbar-collapse {
+                padding-top: 10px;
+            }
+
+            .navbar-nav {
+                align-items: stretch !important;
+            }
+
+            .navbar .nav-link {
+                padding: 9px 5px !important;
+            }
+
+            .theme-button {
+                margin-top: 8px;
+            }
+
+            .site-footer .row > div {
+                margin-bottom: 12px;
+            }
+
+            .footer-links {
+                gap: 12px;
+            }
+        }
+
+        /* Very small phones */
+        @media (max-width: 380px) {
+            .hero {
+                min-height: 220px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 12px;
+            }
+
+            .brand-symbol {
+                font-size: 18px;
+                margin-right: 5px;
+            }
+
+            .brand-name {
+                font-size: 11px;
+            }
+
+            .brand-tagline {
+                font-size: 9px;
+            }
+
+            .information {
+                padding: 11px;
+            }
+
+            .visitor-symbol {
+                width: 28px;
+                height: 28px;
+            }
+
+            .estimate-panel strong {
+                font-size: 20px;
+            }
+
+            .form-label {
+                font-size: 10px;
+            }
+        }
+
+        /* normal desktops */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+
+            .hero {
+                min-height: 290px;
+            }
+
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            .section-spacing {
+                padding: 35px 0;
+            }
+        }
+
+        /* Large desktops */
+        @media (min-width: 1600px) {
+            .container {
+                max-width: 1380px;
+            }
+
+            .hero {
+                min-height: 340px;
+            }
+
+            .hero h1 {
+                font-size: 58px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .information {
+                padding: 22px;
+            }
+        }
+
+        /* Very large screens and TVs */
+        @media (min-width: 2000px) {
+            .container {
+                max-width: 1700px;
+            }
+
+            .navbar {
+                padding: 15px 0;
+            }
+
+            .brand-name {
+                font-size: 16px;
+            }
+
+            .brand-tagline {
+                font-size: 12px;
+            }
+
+            .nav-link {
+                font-size: 14px;
+                padding: 10px !important;
+            }
+
+            .hero {
+                min-height: 440px;
+            }
+
+            .hero h1 {
+                font-size: 72px;
+            }
+
+            .hero p {
+                font-size: 19px;
+                max-width: 680px;
+            }
+
+            .section-spacing {
+                padding: 45px 0;
+            }
+
+            .information {
+                padding: 28px;
+            }
+
+            .information h2 {
+                font-size: 27px;
+            }
+
+            .information h3 {
+                font-size: 21px;
+            }
+
+            .information p,
+            .information li {
+                font-size: 15px;
+            }
+
+            .visitor-detail h3 {
+                font-size: 17px;
+            }
+
+            .visitor-detail p {
+                font-size: 14px;
+            }
+
+            .form-label {
+                font-size: 14px;
+            }
+
+            .form-control,
+            .form-select {
+                font-size: 14px;
+                padding: 12px;
+            }
+
+            .earth-button {
+                font-size: 14px;
+                padding: 12px 20px;
+            }
+
+            .estimate-panel strong {
+                font-size: 32px;
+            }
+
+            .site-footer {
+                padding: 30px 0;
+            }
+        }
+
+        /* Reduce animations when requested by the device */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+.cost-icon {
+    font-size: 32px;
+}
+
+.footer-divider {
+    border-color: #795743;
+}

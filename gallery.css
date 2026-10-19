@@ -1,0 +1,309 @@
+
+body {
+    margin: 0;
+    background-color: #f5eee2;
+    color: #30251e;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* Navigation */
+.navbar { 
+    background-color: #442719; 
+    padding: 8px 0; 
+    border-bottom: 1px solid #8c6a51;
+     }
+.gallery-brand-mark { 
+    color: #f6e9d7;
+     font-size: 22px; 
+     margin-right: 8px;
+      }
+.gallery-brand-title {
+ font-size: 13px; 
+ letter-spacing: 1px;
+  text-transform: uppercase; 
+}
+.gallery-brand-sub { 
+    font-size: 10px;
+     }
+.nav-link {
+ color: #f8efe3 !important;
+  font-family: Arial, sans-serif;
+   font-size: 11px;
+    }
+.nav-link:hover, .nav-link.active { 
+    color: #e7b58e !important; 
+}
+.navbar-toggler { 
+    border-color: #a78a73;
+     }
+.navbar-toggler-icon {
+ filter: invert(1);
+  }
+
+
+.gallery-theme-switch {
+ margin-left: 8px; 
+ padding: 6px 9px;
+  border: 1px solid #a78a73;
+   border-radius: 4px; 
+   background-color: transparent; color: #f8efe3;
+    font-family: Arial, sans-serif;
+     font-size: 11px;
+      cursor: pointer;
+       }
+.gallery-theme-switch:hover {
+ background-color: #6b3f2a; 
+}
+
+
+.gallery-hero {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(31, 22, 15, 0.78), rgba(31, 22, 15, 0.25), rgba(31, 22, 15, 0.08)), url("mountain.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.gallery-hero-content {
+ max-width: 570px;
+ padding: 35px 0;
+  }
+
+.gallery-hero h1 { 
+    margin-bottom: 10px;
+   font-size: 3rem; 
+   line-height: 1.05;
+    }
+
+.gallery-hero p { 
+    max-width: 410px;
+     font-family: Arial, sans-serif;
+      font-size: 14px; 
+      line-height: 1.5; 
+  }
+
+
+.gallery-section { 
+    padding: 28px 0;
+     }
+
+.gallery-filter-row {
+ display: flex;
+  flex-wrap: wrap;
+   gap: 5px;
+    }
+
+.gallery-filter-button { 
+    padding: 7px 11px;
+     border: 1px solid #e2d4c2; 
+     border-radius: 4px; 
+     background-color: #fffaf3; 
+     color: #30251e; 
+     font-family: Arial, sans-serif;
+      font-size: 11px; cursor: pointer;
+       }
+
+.gallery-filter-button.active { 
+    background-color: #442719;
+     color: white;
+      }
+
+.gallery-filter-button:hover { 
+    background-color: #6b3f2a; 
+    color: white;
+     }
+
+.gallery-search { 
+    width: 100%; 
+    padding: 9px 11px;
+     border: 1px solid #e2d4c2;
+      border-radius: 3px; 
+      background-color: white; 
+      color: #30251e; font-family: Arial, sans-serif;
+       font-size: 11px; 
+   }
+
+.gallery-search:focus {
+ outline: 2px solid #8b5539;
+  }
+
+
+.gallery-card { 
+    height: 100%; 
+    overflow: hidden; 
+    border: 1px solid #e2d4c2; 
+    border-radius: 4px;
+     background-color: #fffaf1; 
+ }
+
+.gallery-image {
+ display: block; 
+ width: 100%; 
+ height: 120px;
+  object-fit: cover; 
+}
+
+.gallery-card-caption { 
+    padding: 7px 9px;
+     font-size: 12px;
+      }
+
+.gallery-empty-note { 
+    padding: 10px 0; 
+    color: #77695d; 
+    font-family: Arial, sans-serif;
+     font-size: 11px;
+      }
+
+.gallery-earth-button {
+ padding: 8px 16px;
+  border: 1px solid #9b6b50; 
+  border-radius: 3px; 
+  background-color: #8b5539;
+   color: white; 
+   font-family: Arial, sans-serif;
+    font-size: 12px;
+     }
+
+.gallery-earth-button:hover {
+ background-color: #442719;
+  color: white;
+   }
+
+
+.gallery-footer { 
+    margin-top: 22px;
+     padding: 16px 0; 
+     background-color: #442719;
+      color: #f8efe3;
+       }
+
+.gallery-footer-brand { 
+    font-size: 12px;
+     letter-spacing: 1px;
+      text-transform: uppercase;
+       }
+
+.gallery-footer small {
+ font-family: Arial, sans-serif;
+  font-size: 10px;
+   }
+
+.gallery-footer-nav { 
+    font-family: Arial, sans-serif;
+     font-size: 10px;
+      }
+
+.gallery-footer a:hover {
+ color: #e7b58e;
+  }
+
+.gallery-footer-divider {
+ border-color: #795743; 
+}
+
+
+.dark-mode { 
+    background-color: #1d1a17;
+     color: #f2e9df;
+      }
+.dark-mode .navbar,
+ .dark-mode .gallery-footer { 
+    background-color: #211711;
+     }
+
+.dark-mode .gallery-card {
+ background-color: #29241f; 
+ border-color: #504238; 
+}
+
+.dark-mode .gallery-search {
+ background-color: #302923; 
+ color: #f2e9df;
+  border-color: #504238; 
+}
+
+.dark-mode .gallery-search::placeholder {
+ color: #c0b2a4;
+  }
+
+.dark-mode .gallery-filter-button {
+ background-color: #302923;
+  color: #f2e9df;
+   border-color: #504238;
+    }
+    
+.dark-mode .gallery-filter-button.active, .dark-mode .gallery-filter-button:hover { background-color: #9b6242; color: white; }
+.dark-mode .gallery-empty-note { color: #c0b2a4; }
+
+/* Phones */
+@media (max-width: 575px) {
+    .gallery-hero { 
+        min-height: 240px; 
+    }
+
+    .gallery-hero-content { 
+        padding: 28px 0;
+         }
+
+    .gallery-hero h1 {
+     font-size: 35px;
+      }
+
+    .gallery-section {
+     padding: 22px 0;
+      }
+
+    .gallery-image { 
+        height: 145px; 
+    }
+
+    .gallery-theme-switch {
+     margin: 8px 0; 
+ }
+
+    .gallery-footer-nav {
+     margin-top: 15px; 
+     margin-bottom: 15px;
+      }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .gallery-hero { min-height: 250px; }
+    .gallery-image { height: 155px; }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+    .container { max-width: 1320px; }
+    .gallery-hero { min-height: 285px; }
+    .gallery-hero h1 { font-size: 3.5rem; }
+    .gallery-section { padding: 36px 0; }
+    .gallery-image { height: 160px; }
+}
+
+/* Very large screens */
+@media (min-width: 1920px) {
+    .container { max-width: 1600px; }
+    .gallery-hero { min-height: 340px; }
+    .gallery-hero h1 { font-size: 64px; }
+    .gallery-hero p { font-size: 18px; }
+    .gallery-image { height: 210px; }
+    .gallery-card-caption { font-size: 15px; padding: 10px; }
+}
+
+/* Extra-large screens */
+@media (min-width: 2560px) {
+    .container { max-width: 1900px; }
+    .gallery-hero { min-height: 400px; }
+    .gallery-hero h1 { font-size: 4rem; }
+    .gallery-image { height: 250px; }
+    .gallery-section { padding: 40px 0; }
+}

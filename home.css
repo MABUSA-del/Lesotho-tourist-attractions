@@ -1,0 +1,339 @@
+
+
+body {
+    margin: 0;
+    background-color: #f5eee2;
+    color: #30251e;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.navbar {
+    background-color: #442719;
+    padding: 8px 0;
+}
+
+.home-brand-mark {
+    color: #f6e9d7;
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.home-brand-title {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.home-brand-sub {
+    font-size: 10px;
+}
+
+.nav-link {
+    color: #f8efe3 !important;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e7b58e !important;
+}
+
+.navbar-toggler {
+    border-color: #a78a73;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.home-theme-switch {
+    margin-left: 8px;
+    padding: 6px 9px;
+    border: 1px solid #a78a73;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #f8efe3;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.home-theme-switch:hover {
+    background-color: #6b3f2a;
+}
+
+
+.home-hero {
+    min-height: 285px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient( to right, rgba(31, 22, 15, 0.8), rgba(31, 22, 15, 0.2) ), url("maluti mountains.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.home-hero-content {
+    max-width: 570px;
+    padding: 40px 0;
+}
+
+.home-eyebrow,
+.home-section-kicker {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.home-hero h1 {
+    margin: 8px 0;
+    font-size: 3rem;
+    line-height: 1.05;
+}
+
+.home-hero p {
+    max-width: 410px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.home-earth-button {
+    padding: 8px 16px;
+    border: 1px solid #9b6b50;
+    border-radius: 3px;
+    background-color: #8b5539;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.home-earth-button:hover {
+    background-color: #442719;
+    color: white;
+}
+
+
+.home-section {
+    padding: 28px 0;
+}
+
+.home-section-kicker {
+    color: #8b5539;
+    text-align: center;
+}
+
+.home-section-title {
+    margin: 5px 0 8px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.home-section-intro {
+    max-width: 540px;
+    margin: 0 auto 20px;
+    color: #77695d;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.home-feature-card {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #442719;
+    color: white;
+}
+
+.home-feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.home-feature-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(30, 17, 10, 0.95),
+        rgba(30, 17, 10, 0.4),
+        transparent
+    );
+}
+
+.home-feature-copy {
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    bottom: 12px;
+    left: 16px;
+}
+
+.home-feature-card h3 {
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.home-feature-card p {
+    margin-bottom: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.home-feature-card a {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+
+.home-footer {
+    padding: 16px 0;
+    background-color: #442719;
+    color: #f8efe3;
+}
+
+.home-footer-brand {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.home-footer small {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.home-footer-nav {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.home-footer a:hover {
+    color: #e7b58e;
+}
+
+
+.dark-mode {
+    background-color: #1d1a17;
+    color: #f2e9df;
+}
+
+.dark-mode .home-section-intro {
+    color: #d0c3b7;
+}
+
+.dark-mode .navbar,
+.dark-mode .home-footer {
+    background-color: #211711;
+}
+
+/* Phones */
+@media (max-width: 575px) {
+    .home-hero {
+        min-height: 240px;
+    }
+
+    .home-hero-content {
+        padding: 28px 0;
+    }
+
+    .home-hero h1 {
+        font-size: 35px;
+    }
+
+    .home-section {
+        padding: 22px 0;
+    }
+
+    .home-feature-card {
+        height: 210px;
+    }
+
+    .home-theme-switch {
+        margin: 8px 0;
+    }
+
+    .home-footer-nav {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 991px) {
+    .home-hero {
+        min-height: 260px;
+    }
+
+    .home-feature-card {
+        height: 200px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .home-hero {
+        min-height: 360px;
+    }
+
+    .home-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-section {
+        padding: 36px 0;
+    }
+
+    .home-feature-card {
+        height: 240px;
+    }
+}
+
+/* Very large screens */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .home-hero {
+        min-height: 480px;
+    }
+
+    .home-hero h1 {
+        font-size: 64px;
+    }
+
+    .home-hero p {
+        font-size: 18px;
+    }
+
+    .home-section-title {
+        font-size: 38px;
+    }
+
+    .home-feature-card {
+        height: 300px;
+    }
+}
